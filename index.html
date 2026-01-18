@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tu Tiên Sân Trường: Map Cơ sở 2 UTH</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hud" aria-live="polite">
+      <div class="hud__title">SV · Hành Trình Tu Tiên</div>
+      <div class="hud__stats">
+        <div class="stat"><span>Kiến Thức</span><strong id="stat-knowledge">0</strong></div>
+        <div class="stat"><span>Kỹ Năng</span><strong id="stat-skill">0</strong></div>
+        <div class="stat"><span>Thể Lực</span><strong id="stat-stamina">0</strong></div>
+        <div class="stat"><span>HP</span><strong id="stat-hp">0</strong></div>
+        <div class="stat"><span>KM</span><strong id="stat-km">0</strong></div>
+      </div>
+      <button id="reset" class="hud__reset" type="button">Làm lại</button>
+    </header>
+
+    <main class="scene" id="scene">
+      <div class="scene__background" id="scene-background"></div>
+      <div class="scene__content">
+        <p class="scene__eyebrow" id="scene-eyebrow"></p>
+        <h1 class="scene__title" id="scene-title"></h1>
+        <p class="scene__subtitle" id="scene-subtitle"></p>
+        <div class="dialogue" id="dialogue"></div>
+        <div class="actions" id="actions"></div>
+        <div class="scene__footer" id="scene-footer"></div>
+      </div>
+      <div class="character" id="character">
+        <div class="character__avatar">SV</div>
+        <div class="character__helper">VJ</div>
+      </div>
+    </main>
+  </div>
+
+  <div class="elevator" id="elevator">
+    <div class="elevator__panel elevator__panel--left"></div>
+    <div class="elevator__panel elevator__panel--right"></div>
+    <div class="elevator__text">Thang máy đang tăng tốc...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
